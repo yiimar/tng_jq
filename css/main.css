@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    height:100%;
+}
+    #running-square-area {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-flow: row wrap;
+        place-content: center;
+    }
+        .quarter {
+            position:relative;
+            min-width: 50%;
+            min-height: 400px;
+
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        #quarter1, #quarter3 {
+            float: left;
+        }
+        #quarter2, #quarter4 {
+            float: right;
+        }
+
+            /* расцветки квадратов */
+            #quarter1 > div > div {
+                background-color: red;
+            }
+            #quarter2 > div > div {
+                background-color: yellow;
+            }
+            #quarter3 > div > div {
+                background-color: darkgrey;
+            }
+            #quarter4 > div > div {
+                background-color: green;
+            }
+
+            .quarter > .cell {
+                text-align: center;
+                min-height: 49%;
+                line-height: 50px;
+                min-width: 49%;
+            }
+
+        #target-div {
+            margin: auto;
+            width: 30px;
+            height: 30px;
+        }

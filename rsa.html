@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/jquery-3.7.1.min.js" ></script>
+    <title>Running square by mouse</title>
+</head>
+<body>body
+    <div id="running-square-area">
+        <div id="quarter1" class="quarter">
+            <div id="cell_1" class="cell">
+                <div id="target-div"></div>
+            </div>
+            <div id="cell_2" class="cell"></div>
+            <div id="cell_3" class="cell"></div>
+        </div>
+        <div id="quarter2" class="quarter">
+            <div id="cell_4" class="cell"></div>
+            <div id="cell_5" class="cell"></div>
+            <div id="cell_6" class="cell"></div>
+        </div>
+        <div id="quarter3" class="quarter">
+            <div id="cell_7" class="cell"></div>
+            <div id="cell_8" class="cell"></div>
+            <div id="cell_9" class="cell"></div>
+        </div>
+        <div id="quarter4" class="quarter">
+            <div id="cell_10" class="cell"></div>
+            <div id="cell_11" class="cell"></div>
+            <div id="cell_12" class="cell"></div>
+        </div>
+    </div>
+
+    <script>/* TODO: remove in prod */
+        if (window.jQuery) {
+            let vJq;
+            vJq = jQuery.fn.jquery;
+            console.log(vJq);
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
